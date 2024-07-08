@@ -1,0 +1,50 @@
+15:47:35.874 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+15:47:35.913 [main] DEBUG org.example.Cmc - API call successful
+15:48:15.437 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+15:48:15.457 [main] DEBUG org.example.Cmc - API call successful
+15:55:05.511 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+15:55:05.532 [main] DEBUG org.example.Cmc - API call successful
+15:55:05.533 [main] INFO  org.example.Cmc - Solana Price: 133.4967278679829
+15:55:05.534 [main] INFO  org.example.Cmc - Trunk Price: 0.8489736588899818
+16:30:12.232 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+16:30:12.259 [main] DEBUG org.example.Cmc - API call successful
+16:30:12.261 [main] INFO  org.example.Cmc - Solana Price: 133.26335405541315
+16:30:12.261 [main] INFO  org.example.Cmc - Trunk Price: 0.8511514909100831
+16:31:59.704 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+16:31:59.727 [main] DEBUG org.example.Cmc - API call successful
+16:31:59.728 [main] INFO  org.example.Cmc - Solana Price: 133.29073274991512
+16:34:14.902 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+16:34:14.928 [main] DEBUG org.example.Cmc - API call successful
+16:34:14.929 [main] INFO  org.example.Cmc - Solana Price: 133.3416068710682
+16:34:14.930 [main] INFO  org.example.Crypto - Potentially Stale Price
+16:34:14.931 [main] INFO  org.example.Cmc - Trunk Price: 0.8526423693991468
+16:34:14.932 [main] INFO  org.example.Crypto - Potentially Stale Price
+16:36:14.639 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+16:36:14.663 [main] DEBUG org.example.Cmc - API call successful
+16:36:14.664 [main] INFO  org.example.Cmc - Solana Price: 133.18894741175535
+16:36:14.666 [main] INFO  org.example.Cmc - Trunk Price: 0.8529509263011239
+18:28:57.067 [main] DEBUG org.example.Crypto - Loaded: Solana
+18:28:57.070 [main] DEBUG org.example.Crypto - Price: 133.18894741175535
+18:28:57.071 [main] DEBUG org.example.Crypto - Last Price Update: 6763 seconds ago
+18:31:17.898 [main] DEBUG org.example.Crypto - Loaded: Solana
+18:31:17.900 [main] DEBUG org.example.Crypto - Price: 133.18894741175535
+18:31:17.901 [main] DEBUG org.example.Crypto - Last Price Update: 6903 seconds ago
+18:31:17.902 [main] DEBUG org.example.Crypto - Loaded: Trunk
+18:31:17.902 [main] DEBUG org.example.Crypto - Price: 0.8529509263011239
+18:31:17.902 [main] DEBUG org.example.Crypto - Last Price Update: 6903 seconds ago
+18:31:19.012 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+18:31:19.036 [main] DEBUG org.example.Cmc - API call successful
+18:31:19.037 [main] INFO  org.example.Cmc - Solana Price: 129.17650478561728
+18:31:19.039 [main] INFO  org.example.Cmc - Trunk Price: 0.8661294754030634
+18:31:29.313 [main] DEBUG org.example.Crypto - Loaded: Solana
+18:31:29.316 [main] DEBUG org.example.Crypto - Price: 129.17650478561728
+18:31:29.318 [main] DEBUG org.example.Crypto - Last Price Update: 10 seconds ago
+18:31:29.319 [main] DEBUG org.example.Crypto - Loaded: Trunk
+18:31:29.319 [main] DEBUG org.example.Crypto - Price: 0.8661294754030634
+18:31:29.319 [main] DEBUG org.example.Crypto - Last Price Update: 10 seconds ago
+18:31:30.137 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+18:31:30.153 [main] DEBUG org.example.Cmc - API call successful
+18:31:30.154 [main] INFO  org.example.Cmc - Solana Price: 129.17650478561728
+18:31:30.155 [main] INFO  org.example.Crypto - Potentially Stale Price
+18:31:30.156 [main] INFO  org.example.Cmc - Trunk Price: 0.8661294754030634
+18:31:30.156 [main] INFO  org.example.Crypto - Potentially Stale Price
