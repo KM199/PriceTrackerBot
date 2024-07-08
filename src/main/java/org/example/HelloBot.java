@@ -9,11 +9,8 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class HelloBot extends TelegramLongPollingBot {
-    private static final Logger logger
+    private static final Logger LOGGER
             = LoggerFactory.getLogger(HelloBot.class);
-    private MiniTicker sol;
-    public double lastAlert;
-    public double percentAlert;
     public HelloBot() {
 
     }
@@ -22,13 +19,13 @@ public class HelloBot extends TelegramLongPollingBot {
         SendMessage message = new SendMessage(); // Create a SendMessage object with mandatory fields
         message.setChatId(chatID);
         message.setText(msg);
-        logger.debug("Sending message: " + msg + " to " + chatID);
+        LOGGER.debug("Sending message: " + msg + " to " + chatID);
         try {
             execute(message); // Call method to send the message
-            logger.debug("Sent!");
+            LOGGER.debug("Sent!");
             return null;
         } catch (TelegramApiException e) {
-            logger.error(e.getMessage());
+            LOGGER.error(e.getMessage());
             return e;
         }
     }

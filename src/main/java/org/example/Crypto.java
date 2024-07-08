@@ -10,7 +10,7 @@ import static org.example.Settings.MAX_ALERT_TIME;
 public class Crypto {
     private static HelloBot bot;
     private static String chatID;
-    private static final Logger logger
+    private static final Logger LOGGER
             = LoggerFactory.getLogger(Crypto.class);
     private final String name;
     private Double price;
@@ -54,15 +54,15 @@ public class Crypto {
         this.alertHigh = Double.valueOf(s[2]);
         this.alertLow = Double.valueOf(s[3]);
         this.lastAlertTime = Long.valueOf(s[4]);
-        logger.debug("Loaded: " + name);
-        logger.debug("Price: " + price);
-        logger.debug("Last Price Update: " + lastPriceUpdate() + " seconds ago");
+        LOGGER.debug("Loaded: " + name);
+        LOGGER.debug("Price: " + price);
+        LOGGER.debug("Last Price Update: " + lastPriceUpdate() + " seconds ago");
     }
 
     //Update Prices
     public void update(double price) {
         if (this.price == price) {
-            logger.info("Potentially Stale Price");
+            LOGGER.info("Potentially Stale Price");
         } else {
             this.price = price;
             this.lastPriceUpdate = System.currentTimeMillis() / 1000L;
@@ -89,8 +89,8 @@ public class Crypto {
             msg.append(lastPriceUpdate());
             TelegramApiException error = bot.send(msg.toString(), chatID);
             if (error != null) {
-                logger.error("Message Send Failure");
-                logger.error(error.getMessage());
+                LOGGER.error("Message Send Failure");
+                LOGGER.error(error.getMessage());
             } else {
                 this.lastAlertTime = System.currentTimeMillis() / 1000L;
             }
@@ -100,12 +100,12 @@ public class Crypto {
             msg.append(this.name);
             if (price > alertHigh) {
                 msg.append(" is up ");
-                alertLow = alertHigh * (1 - alertPercent/100);
-                alertHigh = alertHigh * (1 + alertPercent/100);
+                alertLow = alertHigh * (1 - alertPercent / 100);
+                alertHigh = alertHigh * (1 + alertPercent / 100);
             } else {
                 msg.append(" is down ");
-                alertHigh = alertLow * (1 + alertPercent/100);
-                alertLow = alertLow * (1 - alertPercent/100);
+                alertHigh = alertLow * (1 + alertPercent / 100);
+                alertLow = alertLow * (1 - alertPercent / 100);
             }
             msg.append(alertPercent);
             msg.append("%\nThe current price is ");
@@ -116,8 +116,8 @@ public class Crypto {
             msg.append(RoundDouble.round(alertLow, 2));
             TelegramApiException error = bot.send(msg.toString(), chatID);
             if (error != null) {
-                logger.error("Message Send Failure");
-                logger.error(error.getMessage());
+                LOGGER.error("Message Send Failure");
+                LOGGER.error(error.getMessage());
             } else {
                 this.lastAlertTime = System.currentTimeMillis() / 1000L;
             }

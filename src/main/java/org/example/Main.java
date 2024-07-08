@@ -12,18 +12,18 @@ import static org.example.Settings.ALERT_PERCENT_SOL;
 import static org.example.Settings.ALERT_PERCENT_TRUNK;
 
 public class Main {
-    private static final Logger logger
+    private static final Logger LOGGER
             = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
         boolean restart;
         do {
-            logger.info("Booting ...");
-            restart = MainProcess();
+            LOGGER.info("Booting ...");
+            restart = mainProcess();
         } while (restart);
     }
 
-    public static boolean MainProcess() {
+    public static boolean mainProcess() {
         try {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
             HelloBot bot = new HelloBot();
@@ -43,12 +43,13 @@ public class Main {
                 TimeUnit.SECONDS.sleep(60);
             }
         } catch (Exception e) {
-            logger.error(e.getMessage());
+            LOGGER.error(e.getMessage());
         }
-        logger.info("Restarting in 60 seconds");
+        LOGGER.info("Restarting in 60 seconds");
         try {
             TimeUnit.SECONDS.sleep(60);
         } catch (InterruptedException e) {
+            LOGGER.debug(e.toString());
         }
         return true;
     }
