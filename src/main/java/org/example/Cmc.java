@@ -24,7 +24,7 @@ import java.util.concurrent.TimeUnit;
 
 import static org.example.Secret.CMC_API_KEY;
 
-public class Cmc implements Runnable{
+public class Cmc implements Runnable {
     private Crypto solana;
     private Crypto trunk;
 
@@ -32,16 +32,16 @@ public class Cmc implements Runnable{
         this.solana = solana;
         this.trunk = trunk;
     }
-    private static final Logger logger
+    private static final Logger LOGGER
             = LoggerFactory.getLogger(Cmc.class);
-    private static final String baseUrl = "https://pro-api.coinmarketcap.com";
+    private static final String BASE_URL = "https://pro-api.coinmarketcap.com";
 
     public void getPrice() {
-        String uri = baseUrl + "/v2/cryptocurrency/quotes/latest";
+        String uri = BASE_URL + "/v2/cryptocurrency/quotes/latest";
         String solID = "5426";
         String trunkID = "30329";
         List<NameValuePair> paratmers = new ArrayList<NameValuePair>();
-        paratmers.add(new BasicNameValuePair("id",solID + "," + trunkID));
+        paratmers.add(new BasicNameValuePair("id", solID + "," + trunkID));
         try {
             String result = makeAPICall(uri, paratmers);
             try {
@@ -49,31 +49,31 @@ public class Cmc implements Runnable{
                 JsonObject status = jsonObject.getAsJsonObject("status");
                 int errorCode = status.get("error_code").getAsInt();
                 if (errorCode != 0) {
-                    logger.info("API Error");
+                    LOGGER.info("API Error");
                 } else {
-                    logger.debug("API call successful");
+                    LOGGER.debug("API call successful");
                     JsonObject data = jsonObject.getAsJsonObject("data");
                     double solPrice = data.getAsJsonObject(solID).getAsJsonObject("quote").getAsJsonObject("USD").get("price").getAsDouble();
-                    logger.info("Solana Price: " + solPrice);
+                    LOGGER.info("Solana Price: " + solPrice);
                     solana.update(solPrice);
                     double trunkPrice = data.getAsJsonObject(trunkID).getAsJsonObject("quote").getAsJsonObject("USD").get("price").getAsDouble();
-                    logger.info("Trunk Price: " + trunkPrice);
+                    LOGGER.info("Trunk Price: " + trunkPrice);
                     trunk.update(trunkPrice);
                 }
 
             } catch (JsonSyntaxException e) {
-                logger.info("Error: JsonSyntaxException - " + e.toString());
+                LOGGER.info("Error: JsonSyntaxException - " + e.toString());
             }
         } catch (IOException e) {
-            logger.info("Error: cannont access content - " + e.toString());
+            LOGGER.info("Error: cannont access content - " + e.toString());
         } catch (URISyntaxException e) {
-            logger.info("Error: Invalid URL " + e.toString());
+            LOGGER.info("Error: Invalid URL " + e.toString());
         }
     }
 
     public static String makeAPICall(String uri, List<NameValuePair> parameters)
             throws URISyntaxException, IOException {
-        String response_content = "";
+        String responseContent = "";
 
         URIBuilder query = new URIBuilder(uri);
         query.addParameters(parameters);
@@ -87,15 +87,15 @@ public class Cmc implements Runnable{
         CloseableHttpResponse response = client.execute(request);
 
         try {
-            logger.debug(String.valueOf(response.getStatusLine()));
+            LOGGER.debug(String.valueOf(response.getStatusLine()));
             HttpEntity entity = response.getEntity();
-            response_content = EntityUtils.toString(entity);
+            responseContent = EntityUtils.toString(entity);
             EntityUtils.consume(entity);
         } finally {
             response.close();
         }
 
-        return response_content;
+        return responseContent;
     }
 
     @Override
@@ -105,7 +105,7 @@ public class Cmc implements Runnable{
             try {
                 TimeUnit.SECONDS.sleep(300);
             } catch (InterruptedException e) {
-                ;
+                LOGGER.debug(e.toString());
             }
         }
     }
