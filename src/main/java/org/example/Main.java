@@ -8,6 +8,9 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 import java.util.concurrent.TimeUnit;
 
+import static org.example.Settings.ALERT_PERCENT_SOL;
+import static org.example.Settings.ALERT_PERCENT_TRUNK;
+
 public class Main {
     private static final Logger logger
             = LoggerFactory.getLogger(Main.class);
@@ -25,8 +28,17 @@ public class Main {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
             HelloBot bot = new HelloBot();
             botsApi.registerBot(bot);
-            MiniTicker sol = new MiniTicker("solusdc", 1, Settings.PERCENT_ALERT_SOL, bot, Secret.CHAT_ID);
-            sol.run();
+            Crypto solana = new Crypto("Solana", ALERT_PERCENT_SOL);
+            Crypto trunk = new Crypto("Trunk", ALERT_PERCENT_TRUNK);
+            solana.load();
+            trunk.load();
+            Crypto.setBot(bot, Secret.CHAT_ID);
+            MiniTicker sol = new MiniTicker("solusdc", solana);
+            Thread miniTickerThread = new Thread(sol);
+            miniTickerThread.start();
+            Cmc cmc = new Cmc(solana, trunk);
+            Thread cmcThread = new Thread(cmc);
+            cmcThread.start();
             while (true) {
                 TimeUnit.SECONDS.sleep(60);
             }

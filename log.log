@@ -48,3 +48,1024 @@
 18:31:30.155 [main] INFO  org.example.Crypto - Potentially Stale Price
 18:31:30.156 [main] INFO  org.example.Cmc - Trunk Price: 0.8661294754030634
 18:31:30.156 [main] INFO  org.example.Crypto - Potentially Stale Price
+18:40:12.470 [main] DEBUG org.example.Crypto - Loaded: Solana
+18:40:12.472 [main] DEBUG org.example.Crypto - Price: 129.17650478561728
+18:40:12.475 [main] DEBUG org.example.Crypto - Last Price Update: 533 seconds ago
+18:40:12.475 [main] DEBUG org.example.Crypto - Loaded: Trunk
+18:40:12.475 [main] DEBUG org.example.Crypto - Price: 0.8661294754030634
+18:40:12.475 [main] DEBUG org.example.Crypto - Last Price Update: 533 seconds ago
+18:40:13.643 [main] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+18:40:13.662 [main] DEBUG org.example.Cmc - API call successful
+18:40:13.663 [main] INFO  org.example.Cmc - Solana Price: 128.7591139231939
+18:40:13.664 [main] INFO  org.example.Cmc - Trunk Price: 0.8671676782866499
+18:40:20.948 [main] INFO  org.example.Main - Booting ...
+18:40:22.873 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+18:40:24.673 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+18:40:25.012 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.0 to 1.05 to 5312101607
+18:40:25.577 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:25.577 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.96
+18:40:26.476 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.05 to 1.1 to 5312101607
+18:40:26.791 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:26.791 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.94
+18:40:27.481 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.1 to 1.16 to 5312101607
+18:40:27.795 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:27.795 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.9
+18:40:27.885 [main] DEBUG org.example.MiniTicker - Last update: 0
+18:40:28.481 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.16 to 1.22 to 5312101607
+18:40:28.799 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:28.800 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.89
+18:40:29.617 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.22 to 1.28 to 5312101607
+18:40:30.054 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:30.054 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.87
+18:40:30.939 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.28 to 1.34 to 5312101607
+18:40:31.258 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:31.259 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.87
+18:40:31.973 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.34 to 1.41 to 5312101607
+18:40:32.305 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:32.305 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.87
+18:40:32.890 [main] DEBUG org.example.MiniTicker - Last update: 1
+18:40:36.712 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.41 to 1.48 to 5312101607
+18:40:37.058 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:37.058 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.94
+18:40:37.713 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.48 to 1.55 to 5312101607
+18:40:37.895 [main] DEBUG org.example.MiniTicker - Last update: 0
+18:40:38.053 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:38.054 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.94
+18:40:38.714 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.55 to 1.63 to 5312101607
+18:40:39.061 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:39.062 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.89
+18:40:39.755 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.63 to 1.71 to 5312101607
+18:40:40.143 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:40.143 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.87
+18:40:40.720 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.71 to 1.8 to 5312101607
+18:40:41.044 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:41.044 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.88
+18:40:41.804 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.8 to 1.89 to 5312101607
+18:40:42.133 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:42.134 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.88
+18:40:42.734 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.89 to 1.98 to 5312101607
+18:40:42.899 [main] DEBUG org.example.MiniTicker - Last update: 0
+18:40:43.054 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:43.054 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.88
+18:40:44.504 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.98 to 2.08 to 5312101607
+18:40:44.816 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:44.816 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.9
+18:40:45.506 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 2.08 to 2.18 to 5312101607
+18:40:45.834 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:40:45.834 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 128.87
+18:50:07.363 [main] INFO  org.example.Main - Booting ...
+18:50:08.667 [main] DEBUG org.example.Crypto - Loaded: Solana
+18:50:08.667 [main] DEBUG org.example.Crypto - Price: 128.7591139231939
+18:50:08.669 [main] DEBUG org.example.Crypto - Last Price Update: 595 seconds ago
+18:50:08.669 [main] DEBUG org.example.Crypto - Loaded: Trunk
+18:50:08.669 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+18:50:08.669 [main] DEBUG org.example.Crypto - Last Price Update: 595 seconds ago
+18:50:08.740 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+18:50:10.749 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+18:50:10.886 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: SOLUSDC up 5.0% from 1.0 to 1.05 to 5312101607
+18:50:11.353 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+18:50:11.353 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 129.33
+19:20:57.751 [main] INFO  org.example.Main - Booting ...
+19:20:59.250 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:20:59.250 [main] DEBUG org.example.Crypto - Price: 128.7591139231939
+19:20:59.252 [main] DEBUG org.example.Crypto - Last Price Update: 2446 seconds ago
+19:20:59.253 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:20:59.253 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:20:59.253 [main] DEBUG org.example.Crypto - Last Price Update: 2446 seconds ago
+19:20:59.346 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:21:01.297 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:21:04.357 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:21:09.358 [main] DEBUG org.example.MiniTicker - Last update: 6
+19:21:14.358 [main] DEBUG org.example.MiniTicker - Last update: 11
+19:21:19.366 [main] DEBUG org.example.MiniTicker - Last update: 16
+19:21:23.670 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:21:24.371 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:21:29.374 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:21:34.380 [main] DEBUG org.example.MiniTicker - Last update: 3
+19:21:39.381 [main] DEBUG org.example.MiniTicker - Last update: 3
+19:21:42.037 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:21:44.385 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:21:49.391 [main] DEBUG org.example.MiniTicker - Last update: 4
+19:21:54.394 [main] DEBUG org.example.MiniTicker - Last update: 9
+19:21:56.988 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:21:59.398 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:21:59.605 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:22:04.403 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:22:09.404 [main] DEBUG org.example.MiniTicker - Last update: 5
+19:22:12.908 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:22:14.409 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:22:17.700 [main] INFO  org.example.Main - Booting ...
+19:22:19.098 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:22:19.098 [main] DEBUG org.example.Crypto - Price: 129.99
+19:22:19.100 [main] DEBUG org.example.Crypto - Last Price Update: 8 seconds ago
+19:22:19.100 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:22:19.100 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:22:19.101 [main] DEBUG org.example.Crypto - Last Price Update: 2526 seconds ago
+19:22:19.182 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:22:21.267 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:22:21.349 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 129.95
+19:22:22.384 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 129.95
+19:22:22.384 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:22:23.644 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.04
+19:22:24.192 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:22:24.738 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.04
+19:22:24.739 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:22:29.195 [main] DEBUG org.example.MiniTicker - Last update: 5
+19:22:34.200 [main] DEBUG org.example.MiniTicker - Last update: 10
+19:22:37.713 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.12
+19:22:38.768 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.12
+19:22:38.768 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:22:39.201 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:22:40.709 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.16
+19:22:41.640 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.25
+19:22:42.658 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.22
+19:22:44.205 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:22:49.206 [main] DEBUG org.example.MiniTicker - Last update: 7
+19:22:52.088 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.14
+19:22:54.208 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:22:56.994 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.17
+19:22:59.209 [main] DEBUG org.example.MiniTicker - Last update: 3
+19:23:00.783 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.14
+19:23:01.790 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.24
+19:23:04.210 [main] DEBUG org.example.MiniTicker - Last update: 3
+19:23:04.238 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.22
+19:23:05.338 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.23
+19:23:06.338 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.29
+19:23:07.342 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.36
+19:23:08.349 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.34
+19:23:09.216 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:23:09.351 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.29
+19:23:11.330 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.31
+19:23:12.353 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.31
+19:23:12.353 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:23:14.218 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:23:15.937 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.41
+19:23:16.961 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.5
+19:23:17.912 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.52
+19:23:19.221 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:25:03.152 [main] INFO  org.example.Main - Booting ...
+19:25:04.574 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:25:04.575 [main] DEBUG org.example.Crypto - Price: 130.52
+19:25:04.577 [main] DEBUG org.example.Crypto - Last Price Update: 107 seconds ago
+19:25:04.577 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:25:04.577 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:25:04.577 [main] DEBUG org.example.Crypto - Last Price Update: 2691 seconds ago
+19:25:04.664 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:25:06.746 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:25:09.040 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.53
+19:25:09.041 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.53
+Next Alert High: 1.05
+Next Alert Low: 0.95 to 5312101607
+19:25:09.513 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:09.522 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:09.522 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.53
+19:25:09.673 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:25:10.109 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.57
+19:25:10.110 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.57
+Next Alert High: 1.1025
+Next Alert Low: 0.9974999999999999 to 5312101607
+19:25:10.427 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:10.427 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:10.428 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.57
+19:25:11.009 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.63
+19:25:11.009 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.63
+Next Alert High: 1.1576250000000001
+Next Alert Low: 1.047375 to 5312101607
+19:25:11.325 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:11.325 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:11.325 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.63
+19:25:12.209 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.69
+19:25:12.221 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.69
+Next Alert High: 1.2155062500000002
+Next Alert Low: 1.09974375 to 5312101607
+19:25:12.535 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:12.535 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:12.535 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.69
+19:25:13.215 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.67
+19:25:13.215 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.67
+Next Alert High: 1.2762815625000004
+Next Alert Low: 1.1547309375 to 5312101607
+19:25:13.552 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:13.552 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:13.552 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.67
+19:25:14.311 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.65
+19:25:14.311 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.65
+Next Alert High: 1.3400956406250004
+Next Alert Low: 1.2124674843750003 to 5312101607
+19:25:14.634 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:14.634 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:14.634 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.65
+19:25:14.674 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:25:19.067 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.57
+19:25:19.068 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.57
+Next Alert High: 1.4071004226562505
+Next Alert Low: 1.2730908585937504 to 5312101607
+19:25:19.397 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:19.397 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:19.397 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.57
+19:25:19.675 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:25:20.148 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.57
+19:25:20.148 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:25:20.148 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.57
+Next Alert High: 1.477455443789063
+Next Alert Low: 1.336745401523438 to 5312101607
+19:25:20.473 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:20.473 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:20.473 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.57
+19:25:22.925 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.77
+19:25:22.925 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.77
+Next Alert High: 1.5513282159785162
+Next Alert Low: 1.4035826715996098 to 5312101607
+19:25:23.245 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:23.245 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:23.245 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.77
+19:25:24.654 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.82
+19:25:24.655 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.82
+Next Alert High: 1.628894626777442
+Next Alert Low: 1.4737618051795904 to 5312101607
+19:25:24.675 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:25:24.983 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:24.983 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:24.984 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.82
+19:25:25.631 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.85
+19:25:25.631 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.85
+Next Alert High: 1.7103393581163142
+Next Alert Low: 1.5474498954385698 to 5312101607
+19:25:25.972 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:25.972 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:25.972 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.85
+19:25:29.679 [main] DEBUG org.example.MiniTicker - Last update: 4
+19:25:29.984 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.94
+19:25:29.994 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.94
+Next Alert High: 1.79585632602213
+Next Alert Low: 1.6248223902104983 to 5312101607
+19:25:30.320 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:30.320 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:30.320 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.94
+19:25:30.988 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.91
+19:25:30.988 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.91
+Next Alert High: 1.8856491423232367
+Next Alert Low: 1.7060635097210235 to 5312101607
+19:25:31.306 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:31.306 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:31.306 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.91
+19:25:34.683 [main] DEBUG org.example.MiniTicker - Last update: 3
+19:25:34.791 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.0
+19:25:34.798 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.0
+Next Alert High: 1.9799315994393987
+Next Alert Low: 1.7913666852070746 to 5312101607
+19:25:35.114 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:35.114 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:35.114 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.0
+19:25:35.710 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.97
+19:25:35.710 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.97
+Next Alert High: 2.0789281794113688
+Next Alert Low: 1.8809350194674286 to 5312101607
+19:25:36.029 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:36.030 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:36.030 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.97
+19:25:37.307 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.96
+19:25:37.307 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 130.96
+Next Alert High: 2.1828745883819374
+Next Alert Low: 1.9749817704408001 to 5312101607
+19:25:37.634 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:37.634 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:37.634 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 130.96
+19:25:38.398 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.08
+19:25:38.398 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.08
+Next Alert High: 2.2920183178010345
+Next Alert Low: 2.0737308589628403 to 5312101607
+19:25:38.707 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:38.707 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:38.707 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.08
+19:25:39.685 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:25:41.139 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.02
+19:25:41.140 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.02
+Next Alert High: 2.406619233691086
+Next Alert Low: 2.177417401910983 to 5312101607
+19:25:41.459 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:41.460 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:41.460 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.02
+19:25:42.153 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.06
+19:25:42.153 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.06
+Next Alert High: 2.5269501953756404
+Next Alert Low: 2.286288272006532 to 5312101607
+19:25:42.486 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:42.487 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:42.487 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.06
+19:25:43.156 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.16
+19:25:43.156 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.16
+Next Alert High: 2.6532977051444226
+Next Alert Low: 2.400602685606858 to 5312101607
+19:25:43.487 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:43.487 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:43.488 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.16
+19:25:44.209 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.17
+19:25:44.209 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.17
+Next Alert High: 2.785962590401644
+Next Alert Low: 2.5206328198872012 to 5312101607
+19:25:44.537 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:44.537 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:44.537 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.17
+19:25:44.690 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:25:48.186 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.05
+19:25:48.187 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.05
+Next Alert High: 2.9252607199217264
+Next Alert Low: 2.6466644608815617 to 5312101607
+19:25:48.501 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:48.502 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:48.502 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.05
+19:25:49.227 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.1
+19:25:49.227 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.1
+Next Alert High: 3.071523755917813
+Next Alert Low: 2.77899768392564 to 5312101607
+19:25:49.544 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:49.544 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:49.544 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.1
+19:25:49.695 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:25:51.790 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.16
+19:25:51.790 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.16
+Next Alert High: 3.225099943713704
+Next Alert Low: 2.917947568121922 to 5312101607
+19:25:52.109 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:52.110 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:52.110 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.16
+19:25:52.813 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.22
+19:25:52.813 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.22
+Next Alert High: 3.386354940899389
+Next Alert Low: 3.0638449465280186 to 5312101607
+19:25:53.127 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:53.128 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:53.128 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.22
+19:25:53.736 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.28
+19:25:53.736 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.28
+Next Alert High: 3.5556726879443583
+Next Alert Low: 3.2170371938544196 to 5312101607
+19:25:54.171 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:54.172 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:54.172 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.28
+19:25:54.698 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:25:55.110 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.29
+19:25:55.111 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.29
+Next Alert High: 3.7334563223415764
+Next Alert Low: 3.37788905354714 to 5312101607
+19:25:55.442 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:55.442 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:55.442 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.29
+19:25:56.065 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.32
+19:25:56.065 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.32
+Next Alert High: 3.9201291384586554
+Next Alert Low: 3.5467835062244975 to 5312101607
+19:25:56.444 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:25:56.444 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Message Sent
+19:25:56.444 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.Crypto - 131.32
+19:25:57.114 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.37
+19:25:57.115 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0.
+The current price is 131.37
+Next Alert High: 4.116135595381588
+Next Alert Low: 3.7241226815357225 to 5312101607
+19:27:45.103 [main] INFO  org.example.Main - Booting ...
+19:27:46.539 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:27:46.539 [main] DEBUG org.example.Crypto - Price: 131.32
+19:27:46.541 [main] DEBUG org.example.Crypto - Last Price Update: 110 seconds ago
+19:27:46.542 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:27:46.543 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:27:46.543 [main] DEBUG org.example.Crypto - Last Price Update: 2853 seconds ago
+19:27:46.632 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:27:48.456 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:27:49.271 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.88
+19:27:49.273 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%.
+The current price is 131.88
+Next Alert High: 4.12
+Next Alert Low: 3.72 to 5312101607
+19:27:49.741 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:27:50.982 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.81
+19:27:50.983 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%.
+The current price is 131.81
+Next Alert High: 4.32
+Next Alert Low: 3.91 to 5312101607
+19:27:51.304 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:27:51.642 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:27:51.960 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.79
+19:27:51.960 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%.
+The current price is 131.79
+Next Alert High: 4.54
+Next Alert Low: 4.11 to 5312101607
+19:27:52.309 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:27:56.643 [main] DEBUG org.example.MiniTicker - Last update: 4
+19:27:57.229 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.92
+19:27:57.230 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%.
+The current price is 131.92
+Next Alert High: 4.76
+Next Alert Low: 4.31 to 5312101607
+19:27:57.550 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:01.802 [main] INFO  org.example.Main - Booting ...
+19:36:03.248 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:36:03.249 [main] DEBUG org.example.Crypto - Price: 131.92
+19:36:03.251 [main] DEBUG org.example.Crypto - Last Price Update: 486 seconds ago
+19:36:03.251 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:36:03.252 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:36:03.252 [main] DEBUG org.example.Crypto - Last Price Update: 3350 seconds ago
+19:36:03.339 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:36:05.175 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:36:09.987 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.8
+19:36:09.988 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana: 131.8Updated: 1720406169 to 5312101607
+19:36:10.467 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:10.951 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.84
+19:36:10.952 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.84
+Next Alert High: 5.0
+Next Alert Low: 4.53 to 5312101607
+19:36:11.285 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:13.355 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:36:14.479 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.81
+19:36:14.480 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.81
+Next Alert High: 5.25
+Next Alert Low: 4.75 to 5312101607
+19:36:14.798 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:18.357 [main] DEBUG org.example.MiniTicker - Last update: 4
+19:36:23.360 [main] DEBUG org.example.MiniTicker - Last update: 9
+19:36:23.388 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.74
+19:36:23.388 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana: 131.74Updated: 1720406183 to 5312101607
+19:36:23.766 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:25.370 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.74
+19:36:25.370 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:36:25.370 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.74
+Next Alert High: 5.52
+Next Alert Low: 4.99 to 5312101607
+19:36:25.687 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:26.358 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.74
+19:36:26.358 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:36:26.358 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.74
+Next Alert High: 5.79
+Next Alert Low: 5.24 to 5312101607
+19:36:26.675 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:28.362 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:36:30.840 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.66
+19:36:30.841 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.66
+Next Alert High: 6.08
+Next Alert Low: 5.5 to 5312101607
+19:36:31.161 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:31.888 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.6
+19:36:31.888 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.6
+Next Alert High: 6.39
+Next Alert Low: 5.78 to 5312101607
+19:36:32.206 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:36:33.367 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:37:13.874 [main] INFO  org.example.Main - Booting ...
+19:37:15.154 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:37:15.155 [main] DEBUG org.example.Crypto - Price: 131.6
+19:37:15.157 [main] DEBUG org.example.Crypto - Last Price Update: 44 seconds ago
+19:37:15.158 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:37:15.158 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:37:15.158 [main] DEBUG org.example.Crypto - Last Price Update: 3422 seconds ago
+19:37:15.247 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:37:17.086 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:37:20.661 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.73
+19:37:20.662 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana: 131.73
+Updated: 0 to 5312101607
+19:37:21.160 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:23.395 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.73
+19:37:23.395 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:37:23.396 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.73
+Next Alert High: 6.7
+Next Alert Low: 6.07 to 5312101607
+19:37:23.752 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:24.419 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.72
+19:37:24.419 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.72
+Next Alert High: 7.04
+Next Alert Low: 6.37 to 5312101607
+19:37:24.844 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:25.264 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:37:25.440 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.67
+19:37:25.440 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.67
+Next Alert High: 7.39
+Next Alert Low: 6.69 to 5312101607
+19:37:25.756 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:26.370 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.68
+19:37:26.370 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.68
+Next Alert High: 7.76
+Next Alert Low: 7.02 to 5312101607
+19:37:26.685 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:27.695 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.74
+19:37:27.695 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.74
+Next Alert High: 8.15
+Next Alert Low: 7.37 to 5312101607
+19:37:28.028 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:30.268 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:37:35.272 [main] DEBUG org.example.MiniTicker - Last update: 7
+19:37:40.272 [main] DEBUG org.example.MiniTicker - Last update: 12
+19:37:41.110 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.71
+19:37:41.111 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana: 131.71
+Updated: 0 to 5312101607
+19:37:41.490 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:42.134 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.71
+19:37:42.134 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:37:42.135 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.71
+Next Alert High: 8.56
+Next Alert Low: 7.74 to 5312101607
+19:37:42.448 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:45.276 [main] DEBUG org.example.MiniTicker - Last update: 3
+19:37:48.175 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.6
+19:37:48.175 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.6
+Next Alert High: 8.99
+Next Alert Low: 8.13 to 5312101607
+19:37:48.492 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:50.278 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:37:52.168 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.56
+19:37:52.168 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.56
+Next Alert High: 9.43
+Next Alert Low: 8.54 to 5312101607
+19:37:52.484 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:53.144 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.56
+19:37:53.144 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:37:53.144 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.56
+Next Alert High: 9.91
+Next Alert Low: 8.96 to 5312101607
+19:37:53.456 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:37:55.283 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:37:56.265 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.58
+19:37:56.265 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.58
+Next Alert High: 10.4
+Next Alert Low: 9.41 to 5312101607
+19:37:56.574 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:18.941 [main] INFO  org.example.Main - Booting ...
+19:42:20.371 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:42:20.372 [main] DEBUG org.example.Crypto - Price: 131.58
+19:42:20.374 [main] DEBUG org.example.Crypto - Last Price Update: 264 seconds ago
+19:42:20.374 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:42:20.374 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:42:20.374 [main] DEBUG org.example.Crypto - Last Price Update: 3727 seconds ago
+19:42:20.461 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:42:22.388 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:42:24.253 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.55
+19:42:24.254 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.55
+Next Alert High: 10.92
+Next Alert Low: 9.88 to 5312101607
+19:42:24.759 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:25.242 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.55
+19:42:25.242 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:42:25.243 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.55
+Next Alert High: 11.47
+Next Alert Low: 10.38 to 5312101607
+19:42:25.474 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:42:25.568 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:30.478 [main] DEBUG org.example.MiniTicker - Last update: 5
+19:42:31.181 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.45
+19:42:31.182 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.45
+Next Alert High: 12.04
+Next Alert Low: 10.89 to 5312101607
+19:42:31.518 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:32.205 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.57
+19:42:32.206 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.57
+Next Alert High: 12.64
+Next Alert Low: 11.44 to 5312101607
+19:42:32.525 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:34.631 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.59
+19:42:34.632 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.59
+Next Alert High: 13.27
+Next Alert Low: 12.01 to 5312101607
+19:42:34.976 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:35.479 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:42:35.639 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.59
+19:42:35.639 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:42:35.639 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.59
+Next Alert High: 13.94
+Next Alert Low: 12.61 to 5312101607
+19:42:35.974 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:40.481 [main] DEBUG org.example.MiniTicker - Last update: 5
+19:42:44.289 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.56
+19:42:44.289 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.56
+Next Alert High: 14.64
+Next Alert Low: 13.24 to 5312101607
+19:42:44.680 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:45.485 [main] DEBUG org.example.MiniTicker - Last update: 1
+19:42:50.486 [main] DEBUG org.example.MiniTicker - Last update: 6
+19:42:53.608 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.62
+19:42:53.609 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.62
+Next Alert High: 15.37
+Next Alert Low: 13.9 to 5312101607
+19:42:53.944 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:42:55.204 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.66
+19:42:55.205 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.66
+Next Alert High: 16.14
+Next Alert Low: 14.6 to 5312101607
+19:42:55.487 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:42:55.514 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:00.490 [main] DEBUG org.example.MiniTicker - Last update: 5
+19:43:01.492 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.58
+19:43:01.492 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.58
+Next Alert High: 16.94
+Next Alert Low: 15.33 to 5312101607
+19:43:01.812 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:05.493 [main] DEBUG org.example.MiniTicker - Last update: 4
+19:43:07.137 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.52
+19:43:07.137 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.52
+Next Alert High: 17.79
+Next Alert Low: 16.1 to 5312101607
+19:43:07.472 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:10.497 [main] DEBUG org.example.MiniTicker - Last update: 3
+19:43:11.527 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.54
+19:43:11.527 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.54
+Next Alert High: 18.68
+Next Alert Low: 16.9 to 5312101607
+19:43:11.843 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:15.046 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.45
+19:43:15.046 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.45
+Next Alert High: 19.61
+Next Alert Low: 17.75 to 5312101607
+19:43:15.388 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:15.502 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:43:19.662 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.46
+19:43:19.663 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.46
+Next Alert High: 20.59
+Next Alert Low: 18.63 to 5312101607
+19:43:20.002 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:20.504 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:43:24.113 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.43
+19:43:24.113 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.43
+Next Alert High: 21.62
+Next Alert Low: 19.56 to 5312101607
+19:43:24.453 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:25.120 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.44
+19:43:25.120 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.44
+Next Alert High: 22.7
+Next Alert Low: 20.54 to 5312101607
+19:43:25.441 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:25.509 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:43:29.652 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.42
+19:43:29.652 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.42
+Next Alert High: 23.84
+Next Alert Low: 21.57 to 5312101607
+19:43:30.350 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:30.510 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:43:30.675 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.42
+19:43:30.675 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:43:30.675 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.42
+Next Alert High: 25.03
+Next Alert Low: 22.65 to 5312101607
+19:43:31.018 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:35.515 [main] DEBUG org.example.MiniTicker - Last update: 4
+19:43:40.520 [main] DEBUG org.example.MiniTicker - Last update: 9
+19:43:41.222 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.38
+19:43:41.223 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.38
+Next Alert High: 26.28
+Next Alert Low: 23.78 to 5312101607
+19:43:41.539 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:45.521 [main] DEBUG org.example.MiniTicker - Last update: 4
+19:43:49.722 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.32
+19:43:49.722 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.32
+Next Alert High: 27.6
+Next Alert Low: 24.97 to 5312101607
+19:43:50.099 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:50.521 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:43:52.059 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.33
+19:43:52.059 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.33
+Next Alert High: 28.98
+Next Alert Low: 26.22 to 5312101607
+19:43:52.389 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:54.961 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.34
+19:43:54.961 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.34
+Next Alert High: 30.43
+Next Alert Low: 27.53 to 5312101607
+19:43:55.290 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:43:55.526 [main] DEBUG org.example.MiniTicker - Last update: 0
+19:43:57.197 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.34
+19:43:57.197 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:43:57.197 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.34
+Next Alert High: 31.95
+Next Alert Low: 28.91 to 5312101607
+19:43:57.539 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:44:27.254 [main] INFO  org.example.Main - Booting ...
+19:44:28.622 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:44:28.622 [main] DEBUG org.example.Crypto - Price: 131.34
+19:44:28.624 [main] DEBUG org.example.Crypto - Last Price Update: 34 seconds ago
+19:44:28.624 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:44:28.624 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:44:28.624 [main] DEBUG org.example.Crypto - Last Price Update: 3855 seconds ago
+19:44:28.707 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:44:30.690 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:44:40.214 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.49
+19:44:40.216 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.49
+Next Alert High: 33.55
+Next Alert Low: 30.35 to 5312101607
+19:44:40.718 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:44:41.228 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.49
+19:44:41.228 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:44:41.228 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.49
+Next Alert High: 35.22
+Next Alert Low: 31.87 to 5312101607
+19:44:41.542 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:44:43.686 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.55
+19:44:43.686 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.55
+Next Alert High: 36.98
+Next Alert Low: 33.46 to 5312101607
+19:44:43.719 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:44:44.038 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:44:48.721 [main] DEBUG org.example.MiniTicker - Last update: 4
+19:44:53.722 [main] DEBUG org.example.MiniTicker - Last update: 9
+19:45:10.081 [main] INFO  org.example.Main - Booting ...
+19:45:11.360 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:45:11.360 [main] DEBUG org.example.Crypto - Price: 131.55
+19:45:11.362 [main] DEBUG org.example.Crypto - Last Price Update: 28 seconds ago
+19:45:11.363 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:45:11.363 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:45:11.363 [main] DEBUG org.example.Crypto - Last Price Update: 3898 seconds ago
+19:45:11.444 [main] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:45:13.105 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:45:13.822 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.38
+19:45:13.823 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.38
+Next Alert High: 38.83
+Next Alert Low: 35.13 to 5312101607
+19:45:14.291 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:45:16.453 [main] DEBUG org.example.MiniTicker - Last update: 2
+19:45:21.455 [main] DEBUG org.example.MiniTicker - Last update: 7
+19:45:22.180 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.33
+19:45:22.181 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.33
+Next Alert High: 40.77
+Next Alert Low: 36.89 to 5312101607
+19:45:22.503 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:45:23.182 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.31
+19:45:23.183 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.31
+Next Alert High: 42.81
+Next Alert Low: 38.74 to 5312101607
+19:45:23.504 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:45:26.182 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.29
+19:45:26.183 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.29
+Next Alert High: 44.95
+Next Alert Low: 40.67 to 5312101607
+19:45:26.459 [main] DEBUG org.example.MiniTicker - Last update: 3
+19:45:26.522 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:45:27.117 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.38
+19:45:27.117 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.38
+Next Alert High: 47.2
+Next Alert Low: 42.71 to 5312101607
+19:45:27.447 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:57:19.323 [main] INFO  org.example.Main - Booting ...
+19:57:20.755 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:57:20.756 [main] DEBUG org.example.Crypto - Price: 131.38
+19:57:20.757 [main] DEBUG org.example.Crypto - Last Price Update: 713 seconds ago
+19:57:20.758 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:57:20.758 [main] DEBUG org.example.Crypto - Price: 0.8671676782866499
+19:57:20.758 [main] DEBUG org.example.Crypto - Last Price Update: 4627 seconds ago
+19:57:20.844 [Thread-2] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:57:21.451 [Thread-3] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+19:57:21.479 [Thread-3] DEBUG org.example.Cmc - API call successful
+19:57:21.481 [Thread-3] INFO  org.example.Cmc - Solana Price: 131.1954780980017
+19:57:21.482 [Thread-3] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.2
+Next Alert High: 49.56
+Next Alert Low: 44.84 to 5312101607
+19:57:21.963 [Thread-3] DEBUG org.example.HelloBot - Sent!
+19:57:21.965 [Thread-3] INFO  org.example.Cmc - Trunk Price: 0.8797113713621646
+19:57:21.965 [Thread-3] DEBUG org.example.HelloBot - Sending message: Trunk: 0.8797113713621646
+Updated: 0 to 5312101607
+19:57:22.300 [Thread-3] DEBUG org.example.HelloBot - Sent!
+19:57:22.777 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:57:25.149 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.95
+19:57:25.149 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.95
+Next Alert High: 52.04
+Next Alert Low: 47.08 to 5312101607
+19:57:25.475 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:57:26.149 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.95
+19:57:26.150 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:57:26.150 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.95
+Next Alert High: 54.64
+Next Alert Low: 49.44 to 5312101607
+19:57:26.462 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:57:27.992 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.93
+19:57:27.993 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.93
+Next Alert High: 57.37
+Next Alert Low: 51.91 to 5312101607
+19:57:28.314 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:57:28.917 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.93
+19:57:28.917 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:57:28.917 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.93
+Next Alert High: 60.24
+Next Alert Low: 54.5 to 5312101607
+19:57:29.241 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:57:30.856 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+19:57:32.716 [Thread-3] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+19:57:32.718 [Thread-3] DEBUG org.example.Cmc - API call successful
+19:57:32.718 [Thread-3] INFO  org.example.Cmc - Solana Price: 131.1954780980017
+19:57:32.718 [Thread-3] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.2
+Next Alert High: 63.25
+Next Alert Low: 57.23 to 5312101607
+19:57:33.080 [Thread-3] DEBUG org.example.HelloBot - Sent!
+19:57:33.081 [Thread-3] INFO  org.example.Cmc - Trunk Price: 0.8797113713621646
+19:57:33.081 [Thread-3] INFO  org.example.Crypto - Potentially Stale Price
+19:57:33.081 [Thread-3] DEBUG org.example.HelloBot - Sending message: Trunk is up 5.0%
+The current price is 0.88
+Next Alert High: 0.11
+Next Alert Low: 0.1 to 5312101607
+19:57:33.411 [Thread-3] DEBUG org.example.HelloBot - Sent!
+19:59:19.786 [main] INFO  org.example.Main - Booting ...
+19:59:21.166 [main] DEBUG org.example.Crypto - Loaded: Solana
+19:59:21.167 [main] DEBUG org.example.Crypto - Price: 131.1954780980017
+19:59:21.169 [main] DEBUG org.example.Crypto - Last Price Update: 109 seconds ago
+19:59:21.169 [main] DEBUG org.example.Crypto - Loaded: Trunk
+19:59:21.169 [main] DEBUG org.example.Crypto - Price: 0.8797113713621646
+19:59:21.169 [main] DEBUG org.example.Crypto - Last Price Update: 120 seconds ago
+19:59:21.254 [Thread-2] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+19:59:21.839 [Thread-3] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+19:59:21.862 [Thread-3] DEBUG org.example.Cmc - API call successful
+19:59:21.865 [Thread-3] INFO  org.example.Cmc - Solana Price: 131.1287596462705
+19:59:21.867 [Thread-3] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.13
+Next Alert High: 66.42
+Next Alert Low: 60.09 to 5312101607
+19:59:22.363 [Thread-3] DEBUG org.example.HelloBot - Sent!
+19:59:22.365 [Thread-3] INFO  org.example.Cmc - Trunk Price: 0.8797103618277924
+19:59:22.365 [Thread-3] DEBUG org.example.HelloBot - Sending message: Trunk is up 5.0%
+The current price is 0.88
+Next Alert High: 0.11
+Next Alert Low: 0.1 to 5312101607
+19:59:22.684 [Thread-3] DEBUG org.example.HelloBot - Sent!
+19:59:22.994 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+19:59:23.826 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.09
+19:59:23.826 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.09
+Next Alert High: 69.74
+Next Alert Low: 63.1 to 5312101607
+19:59:24.148 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:59:31.266 [Thread-2] DEBUG org.example.MiniTicker - Last update: 7
+19:59:41.267 [Thread-2] DEBUG org.example.MiniTicker - Last update: 17
+19:59:50.617 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.03
+19:59:50.617 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.03
+Next Alert High: 73.22
+Next Alert Low: 66.25 to 5312101607
+19:59:50.977 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:59:51.318 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+19:59:53.958 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.99
+19:59:53.958 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.99
+Next Alert High: 76.89
+Next Alert Low: 69.56 to 5312101607
+19:59:54.275 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+19:59:54.985 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.99
+19:59:54.985 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+19:59:54.986 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.99
+Next Alert High: 80.73
+Next Alert Low: 73.04 to 5312101607
+19:59:55.311 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:01.323 [Thread-2] DEBUG org.example.MiniTicker - Last update: 6
+20:00:03.792 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.97
+20:00:03.792 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.97
+Next Alert High: 84.77
+Next Alert Low: 76.69 to 5312101607
+20:00:04.139 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:06.617 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.94
+20:00:06.618 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.94
+Next Alert High: 89.01
+Next Alert Low: 80.53 to 5312101607
+20:00:07.216 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:07.683 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.94
+20:00:07.683 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+20:00:07.684 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.94
+Next Alert High: 93.46
+Next Alert Low: 84.55 to 5312101607
+20:00:08.006 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:08.648 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 130.92
+20:00:08.648 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 130.92
+Next Alert High: 98.13
+Next Alert Low: 88.78 to 5312101607
+20:00:08.966 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:11.327 [Thread-2] DEBUG org.example.MiniTicker - Last update: 3
+20:00:18.651 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.08
+20:00:18.651 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.08
+Next Alert High: 103.03
+Next Alert Low: 93.22 to 5312101607
+20:00:19.001 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:21.328 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
+20:00:23.964 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.09
+20:00:23.965 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.09
+Next Alert High: 108.19
+Next Alert Low: 97.88 to 5312101607
+20:00:24.292 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:31.332 [Thread-2] DEBUG org.example.MiniTicker - Last update: 7
+20:00:37.174 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.11
+20:00:37.175 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.11
+Next Alert High: 113.6
+Next Alert Low: 102.78 to 5312101607
+20:00:37.863 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:38.994 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.1
+20:00:38.994 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.1
+Next Alert High: 119.28
+Next Alert Low: 107.92 to 5312101607
+20:00:39.389 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:40.722 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.14
+20:00:40.723 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.14
+Next Alert High: 125.24
+Next Alert Low: 113.31 to 5312101607
+20:00:41.114 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:41.333 [Thread-2] DEBUG org.example.MiniTicker - Last update: 0
+20:00:47.823 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.13
+20:00:47.824 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 131.13
+Next Alert High: 131.5
+Next Alert Low: 118.98 to 5312101607
+20:00:48.146 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+20:00:51.335 [Thread-2] DEBUG org.example.MiniTicker - Last update: 3
+20:00:59.997 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.16
+20:01:01.336 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
+20:01:05.642 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.18
+20:01:06.563 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.22
+20:01:11.339 [Thread-2] DEBUG org.example.MiniTicker - Last update: 5
+20:01:16.531 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.44
+20:01:21.343 [Thread-2] DEBUG org.example.MiniTicker - Last update: 5
+20:01:23.467 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.48
+20:01:25.336 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.47
+20:01:30.510 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.44
+20:01:31.344 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+20:01:39.249 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 131.47
+20:01:41.345 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
