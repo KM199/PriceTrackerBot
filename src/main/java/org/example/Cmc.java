@@ -20,10 +20,11 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import static org.example.Secret.CMC_API_KEY;
 
-public class Cmc {
+public class Cmc implements Runnable{
     private Crypto solana;
     private Crypto trunk;
 
@@ -97,4 +98,15 @@ public class Cmc {
         return response_content;
     }
 
+    @Override
+    public void run() {
+        while (true) {
+            this.getPrice();
+            try {
+                TimeUnit.SECONDS.sleep(300);
+            } catch (InterruptedException e) {
+                ;
+            }
+        }
+    }
 }
