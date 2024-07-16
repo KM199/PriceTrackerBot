@@ -33,7 +33,19 @@ public class HelloBot extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         // We check if the update has a message and the message has text
         if (update.hasMessage() && update.getMessage().hasText()) {
-            send(update.getMessage().getText(), update.getMessage().getChatId().toString());
+            //update.getMessage().getText()
+            StringBuilder msg = new StringBuilder();
+            for (Crypto c: Crypto.cryptos) {
+                msg.append(c.name);
+                msg.append(": ");
+                msg.append(RoundDouble.round(c.getPrice(), 2));
+                msg.append("\nLast update: ");
+                msg.append(c.lastPriceUpdate());
+                msg.append("\nLast alert: ");
+                msg.append(c.lastAlertTime());
+                msg.append("\n");
+            }
+            send(msg.toString(), update.getMessage().getChatId().toString());
         }
     }
 
