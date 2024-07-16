@@ -2,7 +2,6 @@ package org.example;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.google.gson.JsonSyntaxException;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpHeaders;
 import org.apache.http.NameValuePair;
@@ -25,12 +24,12 @@ import java.util.concurrent.TimeUnit;
 import static org.example.Secret.CMC_API_KEY;
 
 public class Cmc implements Runnable {
-    private Crypto solana;
-    private Crypto trunk;
+    private static Crypto solana;
+    private static Crypto trunk;
 
     public Cmc(Crypto solana, Crypto trunk) {
-        this.solana = solana;
-        this.trunk = trunk;
+        Cmc.solana = solana;
+        Cmc.trunk = trunk;
     }
     private static final Logger LOGGER
             = LoggerFactory.getLogger(Cmc.class);
@@ -61,8 +60,8 @@ public class Cmc implements Runnable {
                     trunk.update(trunkPrice);
                 }
 
-            } catch (JsonSyntaxException e) {
-                LOGGER.info("Error: JsonSyntaxException - " + e.toString());
+            } catch (Error e) {
+                LOGGER.info(e.toString());
             }
         } catch (IOException e) {
             LOGGER.info("Error: cannont access content - " + e.toString());
@@ -91,6 +90,8 @@ public class Cmc implements Runnable {
             HttpEntity entity = response.getEntity();
             responseContent = EntityUtils.toString(entity);
             EntityUtils.consume(entity);
+        } catch (Error e){
+            LOGGER.error("API Call Error" + e);
         } finally {
             response.close();
         }
@@ -100,11 +101,12 @@ public class Cmc implements Runnable {
 
     @Override
     public void run() {
+        this.getPrice();
         while (true) {
-            this.getPrice();
             try {
                 TimeUnit.SECONDS.sleep(300);
-            } catch (InterruptedException e) {
+                this.getPrice();
+            } catch (Error | InterruptedException e) {
                 LOGGER.debug(e.toString());
             }
         }

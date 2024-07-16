@@ -5,24 +5,28 @@ import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import utils.FileUtils;
 
+import java.util.ArrayList;
+
 import static org.example.Settings.MAX_ALERT_TIME;
 
 public class Crypto {
-    private static HelloBot bot;
-    private static String chatID;
     private static final Logger LOGGER
             = LoggerFactory.getLogger(Crypto.class);
-    private final String name;
+    private static HelloBot bot;
+    private static String chatID;
+    public final String name;
     private Double price;
     private long lastPriceUpdate;
     private final Double alertPercent;
     private Double alertHigh;
     private Double alertLow;
     private long lastAlertTime;
+    public static ArrayList<Crypto> cryptos = new ArrayList<Crypto>();
 
     public Crypto(String name, Double alertPercent) {
         this.name = name;
         this.alertPercent = alertPercent;
+        cryptos.add(this);
     }
 
     public static void setBot(HelloBot bot, String chatID) {
@@ -122,5 +126,9 @@ public class Crypto {
                 this.lastAlertTime = System.currentTimeMillis() / 1000L;
             }
         }
+    }
+
+    public Double getPrice() {
+        return price;
     }
 }
