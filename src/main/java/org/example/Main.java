@@ -8,8 +8,7 @@ import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.example.Settings.ALERT_PERCENT_SOL;
-import static org.example.Settings.ALERT_PERCENT_TRUNK;
+import static org.example.Settings.*;
 
 public class Main {
     private static final Logger LOGGER
@@ -28,15 +27,15 @@ public class Main {
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
             HelloBot bot = new HelloBot();
             botsApi.registerBot(bot);
-            Crypto solana = new Crypto("Solana", ALERT_PERCENT_SOL);
-            Crypto trunk = new Crypto("Trunk", ALERT_PERCENT_TRUNK);
+            Crypto solana = new Crypto("Solana", SOLANA_CMC_ID, ALERT_PERCENT_SOL);
             solana.load();
+            Crypto trunk = new Crypto("Trunk", TRUNK_CMC_ID, ALERT_PERCENT_TRUNK);
             trunk.load();
             Crypto.setBot(bot, Secret.CHAT_ID);
             MiniTicker sol = new MiniTicker("solusdc", solana);
             Thread miniTickerThread = new Thread(sol);
             miniTickerThread.start();
-            Cmc cmc = new Cmc(solana, trunk);
+            Cmc cmc = new Cmc(Crypto.cryptos);
             Thread cmcThread = new Thread(cmc);
             cmcThread.start();
             while (true) {

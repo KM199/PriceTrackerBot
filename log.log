@@ -1693,3 +1693,380 @@ Next Alert Low: 0.15 to 5312101607
 00:00:22.397 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
 00:00:23.425 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 153.87
 00:00:24.448 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 153.96
+23:46:45.036 [main] INFO  org.example.Main - Booting ...
+23:46:46.996 [main] DEBUG org.example.Crypto - Loaded: Solana
+23:46:46.996 [main] DEBUG org.example.Crypto - Price: 153.96
+23:46:46.998 [main] DEBUG org.example.Crypto - Last Price Update: 776782 seconds ago
+23:46:46.999 [main] DEBUG org.example.Crypto - Loaded: Trunk
+23:46:46.999 [main] DEBUG org.example.Crypto - Price: 1.2097118751746097
+23:46:46.999 [main] DEBUG org.example.Crypto - Last Price Update: 776836 seconds ago
+23:46:47.109 [Thread-2] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+23:46:47.679 [Thread-3] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+23:46:47.717 [Thread-3] INFO  org.example.Cmc - Solana Price: 171.43064617894623
+23:46:47.718 [Thread-3] DEBUG org.example.HelloBot - Sending message: Solana: 171.43064617894623
+Updated: 0 to 5312101607
+23:46:48.238 [Thread-3] DEBUG org.example.HelloBot - Sent!
+23:46:48.241 [Thread-3] INFO  org.example.Cmc - Trunk Price: 0.2881921129095877
+23:46:48.241 [Thread-3] DEBUG org.example.HelloBot - Sending message: Trunk: 0.2881921129095877
+Updated: 0 to 5312101607
+23:46:48.307 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+23:46:48.581 [Thread-3] DEBUG org.example.HelloBot - Sent!
+23:46:49.119 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.71
+23:46:49.120 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 171.71
+Next Alert High: 167.83
+Next Alert Low: 151.85 to 5312101607
+23:46:49.504 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+23:46:51.376 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:46:55.852 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:46:57.123 [Thread-2] DEBUG org.example.MiniTicker - Last update: 8
+23:46:58.411 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.63
+23:46:58.411 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sending message: Solana is up 5.0%
+The current price is 171.63
+Next Alert High: 176.22
+Next Alert Low: 159.44 to 5312101607
+23:46:58.789 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.HelloBot - Sent!
+23:46:59.335 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.6
+23:47:00.256 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:00.767 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.58
+23:47:04.658 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:07.126 [Thread-2] DEBUG org.example.MiniTicker - Last update: 7
+23:47:09.061 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:13.463 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:17.129 [Thread-2] DEBUG org.example.MiniTicker - Last update: 17
+23:47:17.867 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:19.814 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.56
+23:47:22.679 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:23.806 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.5
+23:47:24.708 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.63
+23:47:25.719 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.59
+23:47:27.063 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:27.132 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
+23:47:29.519 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.59
+23:47:29.519 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+23:47:31.489 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:32.714 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.49
+23:47:35.890 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:36.401 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.39
+23:47:37.133 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+23:47:37.388 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.42
+23:47:40.278 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:42.019 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.44
+23:47:43.057 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.42
+23:47:44.531 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.47
+23:47:44.657 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:45.540 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.46
+23:47:47.135 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
+23:47:47.870 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.44
+23:47:49.037 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:54.834 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:47:57.136 [Thread-2] DEBUG org.example.MiniTicker - Last update: 10
+23:47:59.339 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:04.356 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:07.141 [Thread-2] DEBUG org.example.MiniTicker - Last update: 20
+23:48:08.760 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:12.856 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.49
+23:48:13.144 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:17.142 [Thread-2] DEBUG org.example.MiniTicker - Last update: 5
+23:48:17.566 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:21.165 [main] INFO  org.example.Main - Booting ...
+23:48:22.942 [main] DEBUG org.example.Crypto - Loaded: Solana
+23:48:22.942 [main] DEBUG org.example.Crypto - Price: 171.49
+23:48:22.944 [main] DEBUG org.example.Crypto - Last Price Update: 10 seconds ago
+23:48:22.945 [main] DEBUG org.example.Crypto - Loaded: Trunk
+23:48:22.945 [main] DEBUG org.example.Crypto - Price: 0.2881921129095877
+23:48:22.945 [main] DEBUG org.example.Crypto - Last Price Update: 94 seconds ago
+23:48:23.049 [Thread-2] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+23:48:24.137 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+23:48:24.530 [Thread-3] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+23:48:24.555 [Thread-3] INFO  org.example.Cmc - Solana Price: 171.45564699080063
+23:48:24.556 [Thread-3] INFO  org.example.Cmc - Trunk Price: 0.28819133935368263
+23:48:24.557 [Thread-3] DEBUG org.example.HelloBot - Sending message: Trunk is up 5.0%
+The current price is 0.29
+Next Alert High: 0.17
+Next Alert Low: 0.15 to 5312101607
+23:48:25.104 [Thread-3] DEBUG org.example.HelloBot - Sent!
+23:48:27.320 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:31.800 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:36.179 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:40.607 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:41.116 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.46
+23:48:43.061 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
+23:48:43.268 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.49
+23:48:45.010 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:49.411 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:53.062 [Thread-2] DEBUG org.example.MiniTicker - Last update: 10
+23:48:53.817 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:48:58.197 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:49:02.623 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:49:03.065 [Thread-2] DEBUG org.example.MiniTicker - Last update: 20
+23:49:07.003 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:49:07.921 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.39
+23:49:11.838 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:49:12.951 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.46
+23:49:13.070 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+23:49:13.989 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.46
+23:49:13.989 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+23:49:16.231 [Management Telegram Connection] ERROR o.t.t.u.DefaultBotSession - Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error executing org.telegram.telegrambots.meta.api.methods.updates.GetUpdates query: [409] Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseInternal(PartialBotApiMethod.java:54)
+	at org.telegram.telegrambots.meta.api.methods.PartialBotApiMethod.deserializeResponseArray(PartialBotApiMethod.java:39)
+	at org.telegram.telegrambots.meta.api.methods.updates.GetUpdates.deserializeResponse(GetUpdates.java:86)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:258)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:188)
+23:49:18.082 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.47
+23:49:25.587 [main] INFO  org.example.Main - Booting ...
+23:49:27.137 [main] DEBUG org.example.Crypto - Loaded: Solana
+23:49:27.138 [main] DEBUG org.example.Crypto - Price: 171.47
+23:49:27.140 [main] DEBUG org.example.Crypto - Last Price Update: 9 seconds ago
+23:49:27.140 [main] DEBUG org.example.Crypto - Loaded: Trunk
+23:49:27.140 [main] DEBUG org.example.Crypto - Price: 0.28819133935368263
+23:49:27.140 [main] DEBUG org.example.Crypto - Last Price Update: 63 seconds ago
+23:49:27.229 [Thread-2] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+23:49:27.742 [Thread-3] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+23:49:27.760 [Thread-3] INFO  org.example.Cmc - Solana Price: 171.5579031698435
+23:49:27.761 [Thread-3] INFO  org.example.Cmc - Trunk Price: 0.28819133935368263
+23:49:27.762 [Thread-3] INFO  org.example.Crypto - Potentially Stale Price
+23:49:27.763 [Thread-3] DEBUG org.example.HelloBot - Sending message: Trunk is up 5.0%
+The current price is 0.29
+Next Alert High: 0.18
+Next Alert Low: 0.16 to 5312101607
+23:49:28.269 [Thread-3] DEBUG org.example.HelloBot - Sent!
+23:49:28.435 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+23:49:28.455 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.54
+23:49:36.417 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.71
+23:49:37.240 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+23:49:37.438 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.71
+23:49:37.439 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+23:49:38.462 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.71
+23:49:38.462 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+23:49:39.384 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.71
+23:49:39.384 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+23:49:41.022 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.68
+23:49:47.242 [Thread-2] DEBUG org.example.MiniTicker - Last update: 6
+23:49:47.473 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.67
+23:49:49.418 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.68
+23:49:57.246 [Thread-2] DEBUG org.example.MiniTicker - Last update: 8
+23:50:07.250 [Thread-2] DEBUG org.example.MiniTicker - Last update: 18
+23:50:12.115 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.67
+23:50:13.115 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.65
+23:50:17.252 [Thread-2] DEBUG org.example.MiniTicker - Last update: 4
+23:50:24.337 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.6
+23:50:27.254 [Thread-2] DEBUG org.example.MiniTicker - Last update: 3
+23:50:27.818 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.64
+23:50:28.842 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.62
+23:50:29.866 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.62
+23:50:29.867 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+23:50:33.758 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.61
+23:59:47.592 [main] INFO  org.example.Main - Booting ...
+23:59:49.535 [main] DEBUG org.example.Crypto - Loaded: Solana
+23:59:49.535 [main] DEBUG org.example.Crypto - Price: 171.61
+23:59:49.537 [main] DEBUG org.example.Crypto - Last Price Update: 556 seconds ago
+23:59:49.538 [main] DEBUG org.example.Crypto - Loaded: Trunk
+23:59:49.538 [main] DEBUG org.example.Crypto - Price: 0.28819133935368263
+23:59:49.538 [main] DEBUG org.example.Crypto - Last Price Update: 685 seconds ago
+23:59:49.627 [Thread-2] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+23:59:50.209 [Thread-3] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+23:59:50.229 [Thread-3] INFO  org.example.Cmc - Solana Price: 171.44841006252346
+23:59:50.230 [Thread-3] INFO  org.example.Cmc - Trunk Price: 0.2883372846222753
+23:59:50.232 [Thread-3] DEBUG org.example.HelloBot - Sending message: Trunk is up 5.0%
+The current price is 0.29
+Next Alert High: 0.19
+Next Alert Low: 0.17 to 5312101607
+23:59:50.753 [Thread-3] DEBUG org.example.HelloBot - Sent!
+23:59:50.772 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+00:00:08.243 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.56
+00:00:09.247 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.54
+00:00:09.638 [Thread-2] DEBUG org.example.MiniTicker - Last update: 0
+00:00:10.212 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.54
+00:00:10.212 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+00:00:12.695 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.56
+00:00:19.639 [Thread-2] DEBUG org.example.MiniTicker - Last update: 7
+00:00:23.888 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.52
+00:00:24.913 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.55
