@@ -26,15 +26,10 @@ import static org.example.Secret.CMC_API_KEY;
 
 public class Cmc implements Runnable {
     private ArrayList<Crypto> cryptos;
+    private List<NameValuePair> parameters;
 
     public Cmc(ArrayList<Crypto> cryptos) {
         this.cryptos = cryptos;
-    }
-    private static final Logger LOGGER
-            = LoggerFactory.getLogger(Cmc.class);
-    private static final String URL = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest";
-
-    public void getPrice() {
         StringBuilder idValue = new StringBuilder();
         Iterator<Crypto> iterator = cryptos.iterator();
         while (iterator.hasNext()) {
@@ -44,8 +39,14 @@ public class Cmc implements Runnable {
                 idValue.append(",");
             }
         }
-        List<NameValuePair> parameters = new ArrayList<NameValuePair>();
+        this.parameters = new ArrayList<NameValuePair>();
         parameters.add(new BasicNameValuePair("id", idValue.toString()));
+    }
+    private static final Logger LOGGER
+            = LoggerFactory.getLogger(Cmc.class);
+    private static final String URL = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest";
+
+    public void getPrice() {
         try {
             String result = makeAPICall(URL, parameters);
             try {
@@ -130,22 +131,12 @@ public class Cmc implements Runnable {
 
     @Override
     public void run() {
-        this.getPrice();
-        while (true) {
-            try {
-                TimeUnit.SECONDS.sleep(300);
-                this.getPrice();
-            } catch (Error | InterruptedException e) {
-                LOGGER.error(e.toString());
-                break;
-            }
-        }
-        LOGGER.warn("Restarting in 300 seconds");
         try {
-            TimeUnit.SECONDS.sleep(300);
-        } catch (InterruptedException e) {
-            LOGGER.debug(e.toString());
+            // Your code to execute every 5 minutes
+            this.getPrice();
+        } catch (Exception e) {
+            // Handle any exceptions here
+            LOGGER.error("An error occurred: " + e.getMessage());
         }
-        run();
     }
 }

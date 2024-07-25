@@ -6,6 +6,8 @@ import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import static org.example.Settings.*;
@@ -36,10 +38,12 @@ public class Main {
             Thread miniTickerThread = new Thread(sol);
             miniTickerThread.start();
             Cmc cmc = new Cmc(Crypto.cryptos);
-            Thread cmcThread = new Thread(cmc);
-            cmcThread.start();
-            while (true) {
-                TimeUnit.SECONDS.sleep(60);
+            ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
+            scheduler.scheduleAtFixedRate(cmc, 0, 300, TimeUnit.SECONDS);
+            try {
+                Thread.sleep(Long.MAX_VALUE);
+            } catch (InterruptedException e) {
+                LOGGER.error(e.toString());
             }
         } catch (Exception e) {
             LOGGER.error(e.getMessage());

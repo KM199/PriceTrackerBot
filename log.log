@@ -2070,3 +2070,120 @@ Next Alert Low: 0.17 to 5312101607
 00:00:19.639 [Thread-2] DEBUG org.example.MiniTicker - Last update: 7
 00:00:23.888 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.52
 00:00:24.913 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.55
+15:35:23.682 [main] INFO  org.example.Main - Booting ...
+15:35:25.428 [main] DEBUG org.example.Crypto - Loaded: Solana
+15:35:25.429 [main] DEBUG org.example.Crypto - Price: 171.55
+15:35:25.431 [main] DEBUG org.example.Crypto - Last Price Update: 56101 seconds ago
+15:35:25.431 [main] DEBUG org.example.Crypto - Loaded: Trunk
+15:35:25.431 [main] DEBUG org.example.Crypto - Price: 0.2883372846222753
+15:35:25.431 [main] DEBUG org.example.Crypto - Last Price Update: 56135 seconds ago
+15:35:25.550 [Thread-2] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+15:35:26.160 [Management Telegram Executor] DEBUG org.example.HelloBot - Sending message: Solana: 171.55
+Last update: 56102
+Last alert: 56908
+Trunk: 0.29
+Last update: 56136
+Last alert: 56136
+ to 5312101607
+15:35:26.187 [Thread-3] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+15:35:26.218 [Thread-3] INFO  org.example.Cmc - Solana Price: 171.86019106247375
+15:35:26.220 [Thread-3] INFO  org.example.Cmc - Trunk Price: 0.26620174375931915
+15:35:26.220 [Thread-3] DEBUG org.example.HelloBot - Sending message: Trunk is up 5.0%
+The current price is 0.27
+Next Alert High: 0.2
+Next Alert Low: 0.18 to 5312101607
+15:35:26.494 [Management Telegram Executor] DEBUG org.example.HelloBot - Sent!
+15:35:26.917 [Thread-3] DEBUG org.example.HelloBot - Sent!
+15:35:27.217 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+15:35:27.346 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.52
+15:35:28.338 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.74
+15:35:29.361 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.7
+15:35:30.910 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.57
+15:35:31.922 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.59
+15:35:33.048 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.48
+15:35:35.561 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
+15:35:36.018 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.38
+15:35:37.041 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.41
+15:35:38.065 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.37
+15:35:38.987 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.4
+15:35:40.011 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.42
+15:35:42.723 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.41
+15:35:45.562 [Thread-2] DEBUG org.example.MiniTicker - Last update: 3
+15:35:55.567 [Thread-2] DEBUG org.example.MiniTicker - Last update: 13
+15:35:57.112 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.34
+15:35:59.364 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.29
+15:36:00.388 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.35
+15:36:01.413 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.27
+15:36:05.371 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.18
+15:36:05.572 [Thread-2] DEBUG org.example.MiniTicker - Last update: 0
+15:36:06.368 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.18
+15:36:06.369 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+15:36:14.620 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.09
+15:36:15.575 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+15:36:17.110 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.17
+15:36:18.709 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.1
+15:36:21.280 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.13
+15:36:25.578 [Thread-2] DEBUG org.example.MiniTicker - Last update: 4
+15:36:35.580 [Thread-2] DEBUG org.example.MiniTicker - Last update: 14
+15:36:36.206 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.93
+15:36:37.252 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 171.99
+15:36:45.584 [Thread-2] DEBUG org.example.MiniTicker - Last update: 8
+15:36:47.446 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.07
+15:36:50.094 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.17
+15:36:55.588 [Thread-2] DEBUG org.example.MiniTicker - Last update: 5
+15:36:57.213 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.18
+15:37:05.593 [Thread-2] DEBUG org.example.MiniTicker - Last update: 8
+15:37:14.116 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.24
+15:37:15.021 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.27
+15:37:15.598 [Thread-2] DEBUG org.example.MiniTicker - Last update: 0
+15:37:17.904 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.26
+15:37:19.338 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.27
+15:37:22.421 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.26
+15:37:23.639 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.26
+15:37:23.640 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+15:37:25.602 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
+15:37:28.964 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.25
+15:37:35.416 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.2
+15:37:35.605 [Thread-2] DEBUG org.example.MiniTicker - Last update: 0
+15:37:36.950 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.28
+15:37:43.095 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.28
+15:37:43.095 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+15:37:44.426 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.28
+15:37:44.426 [OkHttp https://stream.binance.com:9443/...] INFO  org.example.Crypto - Potentially Stale Price
+15:37:45.611 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+15:37:45.655 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.22
+15:37:46.679 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.31
+15:37:48.419 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.28
+15:48:34.613 [main] INFO  org.example.Main - Booting ...
+15:48:36.137 [main] DEBUG org.example.Crypto - Loaded: Solana
+15:48:36.138 [main] DEBUG org.example.Crypto - Price: 172.28
+15:48:36.140 [main] DEBUG org.example.Crypto - Last Price Update: 648 seconds ago
+15:48:36.141 [main] DEBUG org.example.Crypto - Loaded: Trunk
+15:48:36.141 [main] DEBUG org.example.Crypto - Price: 0.26620174375931915
+15:48:36.141 [main] DEBUG org.example.Crypto - Last Price Update: 790 seconds ago
+15:48:36.257 [Thread-2] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connecting to stream.binance.com/ws/solusdc@miniTicker
+15:48:36.780 [pool-2-thread-1] DEBUG org.example.Cmc - HTTP/1.1 200 OK
+15:48:36.816 [pool-2-thread-1] INFO  org.example.Cmc - Solana Price: 172.15518142595005
+15:48:36.817 [pool-2-thread-1] INFO  org.example.Cmc - Trunk Price: 0.2666672852727437
+15:48:36.819 [pool-2-thread-1] DEBUG org.example.HelloBot - Sending message: Trunk is up 5.0%
+The current price is 0.27
+Next Alert High: 0.21
+Next Alert Low: 0.19 to 5312101607
+15:48:37.296 [pool-2-thread-1] DEBUG org.example.HelloBot - Sent!
+15:48:37.770 [OkHttp https://stream.binance.com:9443/...] INFO  c.b.c.c.utils.WebSocketConnection - [Connection 1] Connected to Server
+15:48:54.793 [Management Telegram Executor] DEBUG org.example.HelloBot - Sending message: Solana: 172.16
+Last update: 18
+Last alert: 57716
+Trunk: 0.27
+Last update: 18
+Last alert: 17
+ to 5312101607
+15:48:55.165 [Management Telegram Executor] DEBUG org.example.HelloBot - Sent!
+15:49:14.872 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.38
+15:49:16.283 [Thread-2] DEBUG org.example.MiniTicker - Last update: 2
+15:49:25.861 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.4
+15:49:26.284 [Thread-2] DEBUG org.example.MiniTicker - Last update: 1
+15:49:36.287 [Thread-2] DEBUG org.example.MiniTicker - Last update: 11
+15:49:46.290 [Thread-2] DEBUG org.example.MiniTicker - Last update: 21
+15:49:51.358 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.38
+15:49:52.341 [OkHttp https://stream.binance.com:9443/...] DEBUG org.example.MiniTicker - 172.41
