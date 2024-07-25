@@ -18,31 +18,36 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import static org.example.Secret.CMC_API_KEY;
 
 public class Cmc implements Runnable {
-    private static Crypto solana;
-    private static Crypto trunk;
+    private ArrayList<Crypto> cryptos;
 
-    public Cmc(Crypto solana, Crypto trunk) {
-        Cmc.solana = solana;
-        Cmc.trunk = trunk;
+    public Cmc(ArrayList<Crypto> cryptos) {
+        this.cryptos = cryptos;
     }
     private static final Logger LOGGER
             = LoggerFactory.getLogger(Cmc.class);
-    private static final String BASE_URL = "https://pro-api.coinmarketcap.com";
+    private static final String URL = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest";
 
     public void getPrice() {
-        String uri = BASE_URL + "/v2/cryptocurrency/quotes/latest";
-        String solID = "5426";
-        String trunkID = "30329";
-        List<NameValuePair> paratmers = new ArrayList<NameValuePair>();
-        paratmers.add(new BasicNameValuePair("id", solID + "," + trunkID));
+        StringBuilder idValue = new StringBuilder();
+        Iterator<Crypto> iterator = cryptos.iterator();
+        while (iterator.hasNext()) {
+            Crypto crypto = iterator.next();
+            idValue.append(crypto.cmcId);
+            if (iterator.hasNext()) {
+                idValue.append(",");
+            }
+        }
+        List<NameValuePair> parameters = new ArrayList<NameValuePair>();
+        parameters.add(new BasicNameValuePair("id", idValue.toString()));
         try {
-            String result = makeAPICall(uri, paratmers);
+            String result = makeAPICall(URL, parameters);
             try {
                 JsonObject jsonObject = JsonParser.parseString(result).getAsJsonObject();
                 JsonObject status = jsonObject.getAsJsonObject("status");
@@ -50,16 +55,19 @@ public class Cmc implements Runnable {
                 if (errorCode != 0) {
                     LOGGER.info("API Error");
                 } else {
-                    LOGGER.debug("API call successful");
                     JsonObject data = jsonObject.getAsJsonObject("data");
-                    double solPrice = data.getAsJsonObject(solID).getAsJsonObject("quote").getAsJsonObject("USD").get("price").getAsDouble();
-                    LOGGER.info("Solana Price: " + solPrice);
-                    solana.update(solPrice);
-                    double trunkPrice = data.getAsJsonObject(trunkID).getAsJsonObject("quote").getAsJsonObject("USD").get("price").getAsDouble();
-                    LOGGER.info("Trunk Price: " + trunkPrice);
-                    trunk.update(trunkPrice);
+                    if (data != null) {
+                        for (Crypto crypto : cryptos) {
+                            double price = getPriceFromJSON(data, crypto.cmcId);
+                            if (price > 0) {
+                                LOGGER.info(crypto.name + " Price: " + price);
+                                crypto.update(price);
+                            } else {
+                                LOGGER.error(crypto.name + " Price Error");
+                            }
+                        }
+                    }
                 }
-
             } catch (Error e) {
                 LOGGER.info(e.toString());
             }
@@ -90,13 +98,34 @@ public class Cmc implements Runnable {
             HttpEntity entity = response.getEntity();
             responseContent = EntityUtils.toString(entity);
             EntityUtils.consume(entity);
-        } catch (Error e){
+        } catch (Error e) {
             LOGGER.error("API Call Error" + e);
         } finally {
             response.close();
         }
 
         return responseContent;
+    }
+
+    private double getPriceFromJSON(JsonObject data, String id) {
+        if (data != null) {
+            JsonObject tokenObj = data.getAsJsonObject(id);
+            if (tokenObj != null) {
+                JsonObject tokenQuote = tokenObj.getAsJsonObject("quote");
+                if (tokenQuote != null) {
+                    JsonObject tokenUSD = tokenQuote.getAsJsonObject("USD");
+                    if (tokenUSD != null) {
+                        try {
+                            return tokenUSD.get("price").getAsDouble();
+                        } catch (Error e) {
+                            LOGGER.error(String.valueOf(e));
+                        }
+                    }
+                }
+            }
+            LOGGER.error("Error decoding JSON: " + data.toString());
+        }
+        return -1;
     }
 
     @Override
@@ -107,8 +136,16 @@ public class Cmc implements Runnable {
                 TimeUnit.SECONDS.sleep(300);
                 this.getPrice();
             } catch (Error | InterruptedException e) {
-                LOGGER.debug(e.toString());
+                LOGGER.error(e.toString());
+                break;
             }
         }
+        LOGGER.warn("Restarting in 300 seconds");
+        try {
+            TimeUnit.SECONDS.sleep(300);
+        } catch (InterruptedException e) {
+            LOGGER.debug(e.toString());
+        }
+        run();
     }
 }

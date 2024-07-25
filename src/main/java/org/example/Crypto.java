@@ -15,6 +15,7 @@ public class Crypto {
     private static HelloBot bot;
     private static String chatID;
     public final String name;
+    public final String cmcId;
     private Double price;
     private long lastPriceUpdate;
     private final Double alertPercent;
@@ -23,8 +24,9 @@ public class Crypto {
     private long lastAlertTime;
     public static ArrayList<Crypto> cryptos = new ArrayList<Crypto>();
 
-    public Crypto(String name, Double alertPercent) {
+    public Crypto(String name, String cmcId, double alertPercent) {
         this.name = name;
+        this.cmcId = cmcId;
         this.alertPercent = alertPercent;
         cryptos.add(this);
     }
