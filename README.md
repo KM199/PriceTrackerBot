@@ -1,4 +1,4 @@
-PriceTrackerBot
+# PriceTrackerBot
 
 Sends a Telegram alert after every x% move in the price of a cryptocurrency.
 Additionally it sends a message after x hours of no alerts for each crypto. 
@@ -19,7 +19,7 @@ Create CoinMarketCap Api Key:
 Download the TelegramBot folder
 - Edit settings.example.json to include the API Keys and bot name
   - Rename to settings.json when done
-- Edit users.json to include your chatId which you can get from @RawDataBot on telegram
+- Edit users.example.json to include your chatId which you can get from @RawDataBot on telegram
   - Set custom thresholds if wanted
   - rename to users.json when done
 - Edit assets.json to include more assets if wanted
