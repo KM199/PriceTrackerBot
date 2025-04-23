@@ -38,7 +38,7 @@
         <dependency>
             <groupId>io.github.binance</groupId>
             <artifactId>binance-connector-java</artifactId>
-            <version>3.2.0</version>
+            <version>3.4.1</version>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -50,6 +50,18 @@
             <artifactId>slf4j-api</artifactId>
             <version>2.0.11</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

@@ -37,4 +37,8 @@ build/
 ### Mac OS ###
 .DS_Store
 /out/artifacts/TelegramBot_jar/TelegramBot.jar
-/src/main/java/org/example/Secret.java
+
+
+### Secrets ###
+users.json
+settings.json

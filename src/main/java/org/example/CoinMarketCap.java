@@ -20,21 +20,35 @@ import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
-import static org.example.Secret.CMC_API_KEY;
-
-public class Cmc implements Runnable {
-    private ArrayList<Crypto> cryptos;
+public class CoinMarketCap {
+    private List<Asset> assets;
     private List<NameValuePair> parameters;
+    private static final Logger LOGGER
+            = LoggerFactory.getLogger(CoinMarketCap.class);
+    private static final String URL = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest";
+    private final Settings settings;
 
-    public Cmc(ArrayList<Crypto> cryptos) {
-        this.cryptos = cryptos;
+    public CoinMarketCap(List<Asset> assets, Settings settings) {
+        //Init settings
+        this.settings = settings;
+        //Ensure we only add assets with a CMC ID
+        this.assets = new ArrayList<Asset>();
+        for (Asset asset : assets) {
+            if (asset.cmcId == null) {
+                LOGGER.info("Asset {} has no CMC ID, asset was not included", asset.name);
+            } else {
+                this.assets.add(asset);
+                LOGGER.info("Asset {} included in CMC Api Call", asset.name);
+            }
+        }
+
+        //Build the parameters for the API call
         StringBuilder idValue = new StringBuilder();
-        Iterator<Crypto> iterator = cryptos.iterator();
+        Iterator<Asset> iterator = assets.iterator();
         while (iterator.hasNext()) {
-            Crypto crypto = iterator.next();
-            idValue.append(crypto.cmcId);
+            Asset asset = iterator.next();
+            idValue.append(asset.cmcId);
             if (iterator.hasNext()) {
                 idValue.append(",");
             }
@@ -42,9 +56,7 @@ public class Cmc implements Runnable {
         this.parameters = new ArrayList<NameValuePair>();
         parameters.add(new BasicNameValuePair("id", idValue.toString()));
     }
-    private static final Logger LOGGER
-            = LoggerFactory.getLogger(Cmc.class);
-    private static final String URL = "https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest";
+
 
     public void getPrice() {
         try {
@@ -58,13 +70,13 @@ public class Cmc implements Runnable {
                 } else {
                     JsonObject data = jsonObject.getAsJsonObject("data");
                     if (data != null) {
-                        for (Crypto crypto : cryptos) {
-                            double price = getPriceFromJSON(data, crypto.cmcId);
+                        for (Asset asset : assets) {
+                            double price = getPriceFromJSON(data, asset.cmcId);
                             if (price > 0) {
-                                LOGGER.info(crypto.name + " Price: " + price);
-                                crypto.update(price);
+                                LOGGER.info(asset.name + " Price: " + price);
+                                asset.updatePrice(price);
                             } else {
-                                LOGGER.error(crypto.name + " Price Error");
+                                LOGGER.error(asset.name + " Price Error");
                             }
                         }
                     }
@@ -79,7 +91,7 @@ public class Cmc implements Runnable {
         }
     }
 
-    public static String makeAPICall(String uri, List<NameValuePair> parameters)
+    public String makeAPICall(String uri, List<NameValuePair> parameters)
             throws URISyntaxException, IOException {
         String responseContent = "";
 
@@ -90,7 +102,7 @@ public class Cmc implements Runnable {
         HttpGet request = new HttpGet(query.build());
 
         request.setHeader(HttpHeaders.ACCEPT, "application/json");
-        request.addHeader("X-CMC_PRO_API_KEY", CMC_API_KEY);
+        request.addHeader("X-CMC_PRO_API_KEY", settings.CMC_API_KEY);
 
         CloseableHttpResponse response = client.execute(request);
 
@@ -127,16 +139,5 @@ public class Cmc implements Runnable {
             LOGGER.error("Error decoding JSON: " + data.toString());
         }
         return -1;
-    }
-
-    @Override
-    public void run() {
-        try {
-            // Your code to execute every 5 minutes
-            this.getPrice();
-        } catch (Exception e) {
-            // Handle any exceptions here
-            LOGGER.error("An error occurred: " + e.getMessage());
-        }
     }
 }

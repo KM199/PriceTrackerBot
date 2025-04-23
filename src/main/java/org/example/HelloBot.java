@@ -11,8 +11,9 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public class HelloBot extends TelegramLongPollingBot {
     private static final Logger LOGGER
             = LoggerFactory.getLogger(HelloBot.class);
-    public HelloBot() {
-
+    private final Settings settings;
+    public HelloBot(Settings settings) {
+        this.settings = settings;
     }
 
     public TelegramApiException send(String msg, String chatID) {
@@ -31,32 +32,29 @@ public class HelloBot extends TelegramLongPollingBot {
     }
     @Override
     public void onUpdateReceived(Update update) {
-        // We check if the update has a message and the message has text
-        if (update.hasMessage() && update.getMessage().hasText()) {
-            //update.getMessage().getText()
-            StringBuilder msg = new StringBuilder();
-            for (Crypto c: Crypto.cryptos) {
-                msg.append(c.name);
-                msg.append(": ");
-                msg.append(RoundDouble.round(c.getPrice(), 2));
-                msg.append("\nLast update: ");
-                msg.append(c.lastPriceUpdate());
-                msg.append("\nLast alert: ");
-                msg.append(c.lastAlertTime());
-                msg.append("\n");
+        String chatId = update.getMessage().getChatId().toString();
+        User currentUser = null;
+        for (User user : User.getUsers()) {
+            if(user.CHAT_ID.equals(chatId)) {
+                currentUser = user;
             }
-            send(msg.toString(), update.getMessage().getChatId().toString());
+        }
+        //Allow User to update things, create a new account, etc
+        if (currentUser != null) {
+            currentUser.report();
+        } else {
+            this.send("Welcome", chatId);
         }
     }
 
     @Override
     public String getBotUsername() {
-        return Secret.BOT_NAME;
+        return settings.BOT_NAME;
     }
 
     @Override
     public String getBotToken() {
-        return Secret.TELEGRAM_API_KEY;
+        return settings.TELEGRAM_API_KEY;
     }
 }
 

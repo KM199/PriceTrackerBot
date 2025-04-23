@@ -14,11 +14,14 @@ public final class MiniTicker implements Runnable {
             = LoggerFactory.getLogger(MiniTicker.class);
     private String ticker;
     private WebSocketStreamClient client;
-    private Crypto token;
+    private Asset asset;
     private long lastTime;
-    public MiniTicker(String ticker, Crypto token) {
-        this.ticker = ticker;
-        this.token = token;
+    private final Settings settings;
+
+    public MiniTicker(Asset asset, Settings settings) {
+        this.ticker = asset.binanceTicker;
+        this.asset = asset;
+        this.settings = settings;
         client = new WebSocketStreamClientImpl();
     }
 
@@ -34,7 +37,7 @@ public final class MiniTicker implements Runnable {
             HashMap<String, String> emap = read(event);
             double price = Double.parseDouble(emap.get("c"));
             LOGGER.debug(String.valueOf(price));
-            token.update(price);
+            asset.updatePrice(price);
             lastTime = System.currentTimeMillis() / 1000L;
         }));
         while (true) {
@@ -47,7 +50,7 @@ public final class MiniTicker implements Runnable {
                 long currTime = System.currentTimeMillis() / 1000L;
                 long stale = currTime - lastTime;
                 LOGGER.debug("Last update: " + stale);
-                if (stale > Settings.TICKER_RESTART_TIME_SECONDS) {
+                if (stale > settings.TICKER_RESTART_TIME_SECONDS) {
                     lastTime = 0;
                     client.closeConnection(connection);
                     LOGGER.info("Possibly stale connection, restarting ticker in 30 seconds");

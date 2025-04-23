@@ -26,20 +26,27 @@ public class Main {
 
     public static boolean mainProcess() {
         try {
+            Settings settings = Settings.load();
+            assert settings != null;
+            User.setSettings(settings);
+            User.load();
             TelegramBotsApi botsApi = new TelegramBotsApi(DefaultBotSession.class);
-            HelloBot bot = new HelloBot();
+            HelloBot bot = new HelloBot(settings);
             botsApi.registerBot(bot);
-            Crypto solana = new Crypto("Solana", SOLANA_CMC_ID, ALERT_PERCENT_SOL);
-            solana.load();
-            Crypto trunk = new Crypto("Trunk", TRUNK_CMC_ID, ALERT_PERCENT_TRUNK);
-            trunk.load();
-            Crypto.setBot(bot, Secret.CHAT_ID);
-            MiniTicker sol = new MiniTicker("solusdc", solana);
-            Thread miniTickerThread = new Thread(sol);
-            miniTickerThread.start();
-            Cmc cmc = new Cmc(Crypto.cryptos);
+            User.setHelloBot(bot);
+            if (settings.BINANCE_ENABLED) {
+                for (Asset asset : Asset.getAssets() ) {
+                    if (asset.binanceTicker != null) {
+                        MiniTicker miniTicker = new MiniTicker(asset, settings);
+                        Thread miniTickerThread = new Thread(miniTicker);
+                        miniTickerThread.start();
+                    }
+                }
+            }
+            CoinMarketCap coinMarketCap = new CoinMarketCap(Asset.getAssets(), settings);
+            Loop loop = new Loop(coinMarketCap, settings);
             ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);
-            scheduler.scheduleAtFixedRate(cmc, 0, 300, TimeUnit.SECONDS);
+            scheduler.scheduleAtFixedRate(loop, 0, 300, TimeUnit.SECONDS);
             try {
                 Thread.sleep(Long.MAX_VALUE);
             } catch (InterruptedException e) {
