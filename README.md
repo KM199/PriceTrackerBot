@@ -17,9 +17,11 @@ Create CoinMarketCap Api Key:
 - Free, only makes one call every 5 minutes to stay within usage limits
 
 Download the TelegramBot folder
-- Edit settings.json to include the API Keys and bot name
+- Edit settings.example.json to include the API Keys and bot name
+  - Rename to settings.json when done
 - Edit users.json to include your chatId which you can get from @RawDataBot on telegram
   - Set custom thresholds if wanted
+  - rename to users.json when done
 - Edit assets.json to include more assets if wanted
   - you also have to add these assets to user settings for each user that wants them
 
