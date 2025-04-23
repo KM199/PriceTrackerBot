@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Solana",
+    "binanceTicker": "solusdc",
+    "cmcId": "5426"
+  },
+  {
+    "name": "Bitcoin",
+    "binanceTicker": "btcusdc",
+    "cmcId": "1"
+  }
+]
